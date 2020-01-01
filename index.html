@@ -1,0 +1,209 @@
+<!--
+<?php
+if(isset($_COOKIE["sent"])) {
+    $timeout = "<h3>Hold on.</h3>\n<p>You submitted this form " . timeStr(time()-$_COOKIE["sent"]) . " ago.</p>";
+}
+
+function timeStr($seconds) {
+    $seconds = intval($seconds);
+
+    if($seconds > 60)
+        return intval($seconds/60) . " minutes";
+    return $seconds . " seconds";
+}
+?>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <base href=""> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>DrewRaven</title>
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <a href="#home"><h1>DR</h1></a>
+            <div id="nav">
+                <a href="#about-me">about me</a>
+                <a href="#work">work</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <div></div>
+            <h1>DrewRaven</h1>
+        </div>
+        <div class="background">
+            <img src="" data-src="media/images/background.jpg" alt="Background Image">
+            <video src="" data-src="media/videos/main.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <!-- <h1>About me</h1> -->
+        <div class="content">
+            <div class="about">
+                <h1>Andre<br>Reinstadler</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium natus adipisci consectetur quasi, facilis suscipit minus exercitationem id placeat neque iste quisquam maxime illo. Fuga dolorum nihil et. Quae.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia id amet hic facilis. Dolore saepe deleniti voluptates dignissimos. Consequuntur voluptates sit veritatis rem harum ipsam suscipit, facere libero veniam temporibus.</p>
+            </div>
+            <div class="content-image">
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <h1>My work</h1>
+        <div id="posts">
+            <img class="post" src="media/images/work/51101364_633694833756416_2106045823972252322_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/52313360_297420477590742_4096952219322720592_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/52807198_671360729962300_5510210400301128762_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/54248065_628316764257971_4474804512292192076_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/54512256_1754309664703692_3388000302244485196_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/56636415_2228527267226322_981358513407640913_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/58756974_374742669804193_6734744287012758262_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/59787151_1164037673775751_8082910207622982917_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/61281637_436373650494591_8784643747727858891_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/61705455_398804557390975_4837890655340526602_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/64853960_2931917307032792_3978203752210140514_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/67410966_379029156114190_7486829195379538951_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/68950833_320626668744796_5399605933135440527_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/70787312_2980946535312506_6914969813161498858_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/71189787_2723818237682197_602312067976314902_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/71191984_399577830711362_3829198895662681491_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/71507792_418090265571415_8316780037411971161_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/72402450_727933304375397_773171206349073113_n.jpg" onerror="this.style.display='none'" >
+            <img class="post" src="media/images/work/73058635_161635348234394_1230608404538978439_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/73274981_817717958659144_8921433214404233531_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/73278427_787306425049249_2533565039769694995_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/73381099_1007239162941846_8755746898235317599_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/73407396_942555546116918_1085360238591838770_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/73423679_545106686321514_4703040683448628784_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/74340163_167892004293241_1809594607762666485_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/75272186_207106530286606_3786050875629301361_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/75294880_396263757950040_4148314361497392402_n.jpg" onerror="this.style.display='none'">
+            <img class="post" src="media/images/work/75388564_544153796387234_5961263333191592267_n.jpg" onerror="this.style.display='none'">
+        </div>
+    </section>
+    
+    <div class="background">
+        <img src="" data-src="media/images/background2.jpg" alt="Background Image">
+        <video src="" data-src="media/videos/new.mp4" autoplay muted loop></video>
+    </div>
+
+    <section id="contact">
+        <h1>Contact me</h1>
+        <p>I will get back to you as soon as possible.</p>
+        <form action="mail.php" method="POST" id="contact-form" class="content" autocomplete="off" spellcheck="false">
+            <!-- change action -->
+            <div>
+                <div class="group">      
+                    <input type="text" id="name" name="name" required>
+                    <span class="bar"></span>
+                    <label>Your name</label>
+                </div>
+                <div class="group">      
+                    <input type="text" id="email" name="email" required>
+                    <span class="bar"></span>
+                    <label>Your email</label>
+                </div>
+            </div>
+            <div>
+                <div class="group">      
+                    <textarea rows="10" id="message" name="message"  maxlength="800" required></textarea>
+                    <span class="bar"></span>
+                    <label>Type something</label>
+                </div>
+            </div>
+            <button type="submit" value="Submit">Submit<span><i class="fas fa-paper-plane"></i></span></button>
+        </form>
+        <div id="response">
+            <h3>hi</h3>
+            <!--
+            <?php echo $timeout; ?>
+             -->
+        </div>
+        <!-- put php code here to stop submit -->
+    </section>
+
+    <!-- misc elements -->
+    <div id="nav-menu-container">
+        <div id="nav-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <div id="scroll-pos-container">
+        <div id="scroll-pos"></div>
+    </div>
+
+    <div id="notify">
+        <h4></h4>
+        <p></p>
+    </div>
+
+    <div id="showImageContainer">
+        <img src="media/images/work/51101364_633694833756416_2106045823972252322_n.jpg" alt="Showcase Image" id="showImage">
+        <button onclick="document.getElementById('showImageContainer').classList.remove('active')">Close</button>
+    </div>
+
+    <div id="nav-mobile-container">
+        <div class="relative">
+            <div id="nav-mobile">
+                <strong>Where are we going?</strong>
+                <div>
+                    <a href="#about-me">about me</a>
+                    <a href="#work">work</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </div>
+            <div class="nav-background"></div>
+        </div>
+    </div>
+    <!-- misc elements end -->
+
+    <footer>
+        <div id="footer-content">
+            <div class="contact-wrap">
+                <a class="contact">
+                    <div class="footer-icon"><i class="fas fa-phone"></i></div>
+                    <p>+43 660 7774782</p>
+                </a>
+                <a href="mailto:drew@ravenart.at" class="contact">
+                    <div class="footer-icon"><i class="far fa-envelope"></i></div>
+                    <p>drew@ravenart.at</p>
+                </a>
+            </div>
+            <div class="social-wrap">
+                <strong>Follow me on social media</strong>
+                <p>Stay updated and check out my work.</p>
+                <div id="social">
+                    <a href="https://www.facebook.com"><div class="footer-icon"><i class="fab fa-facebook-f"></i></div></a>
+                    <a href="https://www.instagram.com"><div class="footer-icon"><i class="fab fa-instagram"></i></div></a>
+                </div>
+            </div>
+        </div>
+        <div id="copy">&copy; 2019 - Alois Reinstadler</div>
+    </footer>
+
+</body>
+</html>
